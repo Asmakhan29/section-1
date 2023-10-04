@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+<body>
+    <h1>Student Admission Form</h1><hr>
+
+    <form>
+        <label for="fname">Full Name</label>
+        <input type="text" id ="fname" minlength="3"><br><br>
+
+        <label>Email Address</label>
+        <input type="email"><br><br>
+
+        <label>Age</label>
+        <input type="number" min="18"><br><br>
+
+        <label>Date of Fee Submission</label>
+        <input type="date"><br><br>
+
+        <label>Mailing Address</label>
+        <textarea cols="30" rows="10"></textarea><br><br>
+
+        <label>City</label>
+        <select>
+            <option>London</option>
+            <option>California</option>
+            <option>Paris</option>
+            <option>Texas</option>
+            <option>LA</option>
+        </select><br><br>
+
+        <label>Subjects</label>
+        <input type="text" list="sub">
+        <datalist id="sub">
+            <option>maths</option>
+            <option>english</option>
+            <option>computer science</option>
+            <option>science</option>
+        </datalist><br><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gen">Male
+        <input type="radio" name="gen">Female
+        <input type="radio" name="gen">Other <br><br>
+
+        <input type="checkbox">Accept Terms and conditions
+        <details>
+            <summary>View Summary</summary>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem iusto sint assumenda blanditiis, consequuntur, inventore laboriosam nobis repellat eius earum voluptatum ut itaque commodi quos natus sapiente doloribus pariatur omnis corporis laborum optio, facilis libero ullam placeat? Facere eius, eaque expedita ipsum nobis eos et soluta quibusdam sit. Molestiae, perferendis.</p>
+        </details><br><br>
+
+        <video src="video.mp4" height="300px" autoplay controls></video><br>
+
+
+        <br><button>Submit</button>
+
+
+    </form>
+</body>
+</html>
