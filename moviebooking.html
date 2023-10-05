@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <style>
+        h2 {
+            background-color: #8a6ac8;
+            color:white;
+            text-align: center;
+            padding:20px
+        }
+
+        .lab {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: medium;
+            text-align: center;
+        }
+
+        button {
+            background-color: #8a6ac8;
+            color:black;
+            border-radius: 4px;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 20px;
+            text-align: center;
+
+        }
+
+        .bor {
+            border-color: rgb(70, 68, 68);
+            text-align: center;
+            border-style: dashed;
+            margin-left: 400px;
+            margin-right: 400px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Book My Movie Ticket!!</h2><hr>
+    
+    <form>
+        <div class="bor">
+            <div class="lab">
+                <label for="pname">Name</label>
+                <input type="text" id="pname" required>
+            </div>
+    
+            <div class="lab">
+                <label for="pphone">Phone No.</label>
+                <input type="number" id="pphone" min="10">
+            </div>
+    
+            <div class="lab">
+                <label for="movie">Select Movie</label>
+                <select id="movie">
+                    <option value="a">Jawan</option>
+                    <option value="b">How to lose a guy in 10 days</option>
+                    <option value="c">Bride Wars</option>
+                    <option value="d">Flipped</option>
+                    <option value="e">Bruce Almighty</option>
+                </select>
+            </div>
+    
+            <div class="lab">
+                <label for="seat">Select Seat</label>
+                <select id="seat">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>Gold</option>
+                </select>
+            </div>
+    
+            <div class="lab">
+                <label for="food">Select Food</label>
+                <input type="checkbox" id="food" name="pop">Cold Drink
+                <input type="checkbox" id="food" name="pop">Popcorn
+                <input type="checkbox" id="food" name="pop">Ice-Cream
+                <input type="checkbox" id="food" name="pop">Meal
+                <input type="checkbox" id="food" name="pop">Cold Coffee
+            </div>
+    
+            <div class="lab">
+                <label for="date">Select Date</label>
+                <input type="date" required>
+            </div>
+    
+            <div class="lab">
+                <label for="mail">E-mail</label>
+                <input type="email" required>
+            </div>
+    
+            <div class="lab">
+                <label for="payment">Payment Method</label>
+                <input type="radio" name="pay">UPI
+                <input type="radio" name="pay">Net Banking
+                <input type="radio" name="pay">Paytm Wallet
+                <input type="radio" name="pay">Credit/Debit Card
+            </div>
+        </div>
+        <div class="lab" style="padding-top: 40px; padding-bottom: 0%;" >
+            <input type="reset">
+            <button>Book Now</button>
+        </div>
+
+        <img src="mov.jpg" alt="movie" style="width:80%; height:190px;">
+        
+    </form>
+</body>
+</html>
