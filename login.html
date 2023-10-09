@@ -14,13 +14,14 @@
 
         .mycard {
             /* border: 1px solid crimson; */
-            width: 20%;
-            padding: 30px;
+            width: 22%;
+            padding: 36px;
             border-radius: 10px;
             /* x-offset y-offset blur size color */
             box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.516);
             box-sizing: border-box;
             font-size: 12px;
+            background-color: #fff;
         }
 
         .form-title {
@@ -35,6 +36,11 @@
             padding: 7px;
             /* border-radius: 5px; */
             margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .myinput:focus {
+            background-color: #d8ced09e;
         }
 
         body {
@@ -42,24 +48,38 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            /* background-color: aquamarine; */
+            /* background-image: linear-gradient(45deg,rgb(175, 81, 97),rgb(209, 209, 159),rgb(167, 107, 167)); */
+            background-image:  url('https://i.pinimg.com/originals/17/07/21/170721a5c788ff7f6b2764014afd4eef.jpg');
+            /* background-image:linear-gradient(45deg,#af516179,#d1d19f74,#a76ba773),url('https://images.pexels.com/photos/4792352/pexels-photo-4792352.jpeg?cs=srgb&dl=pexels-anete-lusina-4792352.jpg&fm=jpg'); */
+            /* background-image: url('https://img.freepik.com/free-vector/prickly-juniper-branch-beige-gray-minimal-background_53876-113047.jpg?w=2000'); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
         }
 
         .mybtn {
-            color: rgb(81, 81, 128);
-            border: 2px solid rgb(81, 81, 128);
+            /* color: rgb(81, 81, 128); */
+            border: 2px solid #ba8d95;
+            /* border: none; to remove border */
             border-radius: 3px;
-            color:rgb(81, 81, 128);
+            
             height: 20%;
             width: 100%;   
             padding: 7px;
             text-align: center;
-            margin-top: 10px;
+            margin-top: 16px;
             font-size: 15px;
+            transition-duration: 300ms;
+            box-shadow: 2px 2px 2px 0 #0000007c;
+            background-color: #ba8d95;
+            color: #fff;
         }
 
         .mybtn:hover {
-            background-color: rgb(81, 81, 128);
-            color: #fff;
+            color:#ba8d95;
+            border: 2px solid #ba8d95;
+            background-color: #fff;
         }
 
     </style>
