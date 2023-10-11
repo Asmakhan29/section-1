@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Gabarito:regular,500,600,700,800,900" rel="stylesheet" />
+    <style>
+
+        * {
+            font-family: Gabarito;
+        }
+        .container {
+            background-color:#008374;
+            /* margin: top/bottom  right/left */
+            padding: 0 100px;
+        }
+
+        .header-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+        }
+        .mybtn {
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+        .title {
+            color:#fff;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            color: #ced1d198;
+        }
+        .content {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-row">
+                <div class="content">
+                    <h1 class="title">Welcome to Impact</h1>
+                    <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, iure minus reiciendis quasi molestiae fugiat!</p>
+                    <div>
+                        <button class="mybtn mainbtn">Get Started</button>
+                        <button class="mybtn mainbtn2">Watch Video</button>
+                    </div>
+                </div>    
+                <div class="solimg">
+                    <img src="sol.svg" alt="solution">
+                </div>
+            </div>
+            
+        </div>
+    </header>
+</body>
+</html>
