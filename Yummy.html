@@ -16,8 +16,6 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             padding: 20px 10px;
-            padd
-            /* justify-content:space-between; */
             box-sizing: border-box;
             height: 100%;
             align-items: center;
@@ -25,8 +23,6 @@
         .child {
             margin:10px 30px;
             box-sizing: border-box;
-            /* padding-right: 100px; */
-            border: 2px solid black;  
         }
         .content {
             padding:90px 60px;
@@ -47,33 +43,44 @@
             border-radius: 25px;
             color:#fff;
             margin-right:20px;
-            /* margin-top: 20px; */
+            box-shadow:0 5px 20px 1px #ce12123f;
+            transition-duration: 300ms;
+            cursor: pointer;
         }
         .mybtn:hover {
             box-shadow:0 5px 20px 2px #ce121266;
         }
         .watch {
-            
-            /* grid-template-columns: 1fr 1fr; */
-            /* grid-template-columns: 20px 70px; */
             border: none;
-            /* box-sizing: border-box; */
-            border: 1px solid black;
-            /* height:40px; */
-            /* width:40%; */
-            /* width:200px; */
-            box-sizing :border-box;
-            /* padding-left: 60px; */
-            /* width:100px; */
-            /* padding:px 0; */
             display: flex;
             align-items: center;
-            /* width: 50px; */
-            /* height:40px; */
-            padding: 0 0;
+            cursor:pointer;
         }
         .watch:hover{
             color:#ce1212;
+        }
+        #about {
+            padding: 30px 100px;
+        }
+        .abt-container {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+        }
+        .row1 {
+            padding-right:  30px;
+        }
+        .row2{
+            padding-left: 50px;
+            box-sizing: border-box;
+            /* padding-right: 20px; */
+        }
+        .row1 img{
+            height: 100%;
+            width:100%;
+        }
+        .row2 img {
+            height:60%;
+            width:100%;
         }
     </style>
 </head>
@@ -89,7 +96,7 @@
                 <button class="mybtn book">Book a Table</button>
     
                 <a class="watch">
-                    <img src="playred.svg" alt="play" style="height:30px;width:30px; padding-left: 10px; padding-right: 0%;">Watch Video
+                    <img src="playred.svg" alt="play" style="height:50px; width:50px; padding-left: 10px; padding-right: 7px;">Watch Video
                 </a>
                     
         
@@ -97,6 +104,30 @@
         </div>
         <div class="child">
             <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/hero-img.png" alt="main">
+        </div>
+    </div>
+
+    <div id="about">
+        <h5>ABOUT US</h5>
+        <h2>LEARN MORE ABOUT US</h2>
+        <div class="abt-container">
+            <div class="row1">
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/about.jpg" alt="about">
+                <div class="mobile">
+                    <h4>Book a Table</h4>
+                    <p>+1 5589 55488 55</p>
+                </div>
+            </div>
+            <div class="row2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ul>
+                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/about-2.jpg" alt="abt2">
+            </div>
         </div>
     </div>
 </body>
