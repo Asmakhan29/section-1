@@ -4,102 +4,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet">
     <title>Yummy</title>
     <style>
-        body{
+        body {
             height: 100%;
             width: 100%;
             margin: 0;
+            font-size: 16px;
+            font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
+
+        .special {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #37373f;
+            font-family: "Amatic SC", sans-serif;
+            padding-right: 40px;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            align-items: center;
+            text-align: center;
+            padding: 0px 0px;
+            position: sticky;
+            width: 100%;
+            background-color: #fff;
+            z-index: 2;
+            top: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 150px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #7f7f85;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+            text-decoration-color: #ce1212;
+        }
+
+        #mybtn2 {
+            padding: 12px 30px;
+            border: 1px solid #ce1212;
+            background-color: #ce1212;
+            border-radius: 25px;
+            color: #fff;
+            margin-right: 20px;
+            cursor: pointer;
+            width: 140px;
+        }
+
         .container {
-            background-color: #eee;
+            background-color: #eeeded;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            padding: 20px 10px;
+            padding: 50px 10px;
             box-sizing: border-box;
             height: 100%;
             align-items: center;
         }
+
         .child {
-            margin:10px 30px;
+            margin: 10px 30px;
             box-sizing: border-box;
         }
+
         .content {
-            padding:90px 60px;
+            padding: 90px 60px;
             /* margin-right: 80px; */
         }
+
         .child img {
             height: 100%;
-            width:100%;
+            width: 100%;
             box-sizing: border-box;
             padding: 0 10px;
             /* padding-left: 40px; */
             padding: 2px 90px;
         }
+
         .mybtn {
             padding: 12px 35px;
             border: 1px solid #ce1212;
             background-color: #ce1212;
             border-radius: 25px;
-            color:#fff;
-            margin-right:20px;
-            box-shadow:0 5px 20px 1px #ce12123f;
+            color: #fff;
+            margin-right: 20px;
+            box-shadow: 0 5px 20px 1px #ce12123f;
             transition-duration: 300ms;
             cursor: pointer;
+            font-size: 15px;
+            letter-spacing: 1px;
         }
+
         .mybtn:hover {
-            box-shadow:0 5px 20px 2px #ce121266;
+            box-shadow: 0 5px 20px 2px #ce121266;
         }
+
         .watch {
             border: none;
             display: flex;
             align-items: center;
-            cursor:pointer;
+            cursor: pointer;
+            font-size: 17px;
         }
-        .watch:hover{
-            color:#ce1212;
+
+        .watch:hover {
+            color: #ce1212;
+            text-decoration: none;
         }
-        #about {
+
+        .about {
             padding: 30px 100px;
+            margin: 40px 0;
         }
+
+        .smallabt {
+            font-size: 15px;
+            color: rgb(142, 142, 142);
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .special2 {
+            text-align: center;
+            font-size: 47px;
+            margin-top: -15px;
+            margin-bottom: 40px;
+            font-weight: lighter;
+            font-family: "Amatic SC", sans-serif;
+        }
+
         .abt-container {
             display: grid;
-            grid-template-columns: 3fr 2fr;
+            grid-template-columns: 5fr 3fr;
+            grid-gap: 40px;
         }
+
         .row1 {
-            padding-right:  30px;
+            padding-right: 30px;
+            position: relative;
+            text-align: center;
+            align-items: center;
+            /* border: 1px solid black; */
         }
-        .row2{
-            padding-left: 50px;
+
+        .row2 {
+            /* padding-left: 50px; */
             box-sizing: border-box;
             /* padding-right: 20px; */
+            /* align-items: center; */
+            /* position: relative; */
+            /* border: 1px solid black; */
+
         }
-        .row1 img{
+
+        row2 p {
+            padding-bottom: 18px;
+        }
+
+        .row1 img {
             height: 100%;
-            width:100%;
+            width: 100%;
+            /* border: 1px solid black; */
         }
+
         .row2 img {
-            height:60%;
-            width:100%;
+            /* padding-top: 25px; */
+            /* height:60px; */
+            width: 100%;
+            /* width: 40%; */
+            height: auto;
+            object-fit: cover;
+
+        }
+
+        #p1 {
+            font-style: italic;
+        }
+
+        #mobile {
+            /* border: 1px solid black;
+            text-align: center;*/
+            margin: -200px;
+            /* padding: 20px 40px;*/
+            background-color: #fff;
+            height: 20%;
+            width: 69%;
+            /* position: absolute; */
+            position: absolute;
+            /* top: 75%;*/
+            left: 38%;
+            font-size: 25px;
+
+        }
+
+        #mobile p {
+            margin: -24px;
+            color: #ce1212;
+        }
+
+        #mycard {
+            background-color: #eeeded;
+            display: grid;
+            grid-template-columns: 5fr 3fr 3fr 3fr;
+            grid-gap: 40px;
+            /* border: 1px solid black; */
+            padding: 70px 60px;
+            box-sizing: border-box;
+            height: 100%;
+            align-items: center;
+            font-size: 16px;
+
+        }
+
+        #redcard {
+            background-color: #ce1212;
+            color: #fff;
+            padding: 30px 45px;
+            /* font-size: 1.2rem; */
+        }
+
+        .card {
+            background-color: #fff;
+            text-align: center;
+            align-items: center;
+            padding: 40px 20px;
+            color: rgb(72, 71, 71);
+            /* transition: 1s; */
+        }
+
+        .card img {
+            height: 70px;
+            width: auto;
+        }
+
+        .card h3 {
+            color: black;
+        }
+
+        .card:hover {
+            border: 10px solid #fff;
+            /* padding: 20px; */
+        }
+
+        .btndiv {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .learn {
+            padding: 11px 38px;
+            border: none;
+            background-color: #ffffff51;
+            color: #fff;
+            border-radius: 25px;
+            font-size: 16.5px;
+        }
+
+        .bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.503), rgba(0, 0, 0, 0.459)), url('https://bootstrapmade.com/demo/templates/Yummy/assets/img/stats-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            align-items: center;
+            padding: 110px 90px;
+        }
+
+        .bgcard {
+            color: #fff;
+            text-align: center;
+        }
+
+        .bgcard h1 {
+            font-size: 46px;
+        }
+
+        .bgcard p {
+            font-size: 17px;
+            margin-top: -30px;
+            font-weight: bold;
+            color: #ffffff9c;
         }
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <h1>Yummy<span style="color:#ce1212">.</span> </h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Chefs</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Drop Down</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button id="mybtn2">Book a table</button>
+    </div>
     <div class="container">
         <div class="child content">
-            <h1>ENJOY YOUR HEALTHY DELICIOUS FOOD</h1>
-            <P style="color:rgb(61, 61, 61)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet perferendis ullam provident
+            <h1 class="special">ENJOY YOUR HEALTHY DELICIOUS FOOD</h1>
+            <P style="color:rgb(61, 61, 61)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet
+                perferendis ullam provident
                 consequatur quae.</P>
 
-            <div style="display: flex;">
+            <div style="display: flex; padding-top: 12px;">
                 <button class="mybtn book">Book a Table</button>
-    
+
                 <a class="watch">
-                    <img src="playred.svg" alt="play" style="height:50px; width:50px; padding-left: 10px; padding-right: 7px;">Watch Video
+                    <img src="playred.svg" alt="play"
+                        style="height:50px; width:50px; padding-left: 10px; padding-right: 7px;">Watch Video
                 </a>
-                    
-        
+
+
             </div>
         </div>
         <div class="child">
@@ -107,28 +348,83 @@
         </div>
     </div>
 
-    <div id="about">
-        <h5>ABOUT US</h5>
-        <h2>LEARN MORE ABOUT US</h2>
+    <div class="about">
+        <h5 class="smallabt">ABOUT US</h5>
+        <h2 class="special2">LEARN MORE <span style="color:#ce1212">ABOUT US</span></h2>
         <div class="abt-container">
             <div class="row1">
                 <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/about.jpg" alt="about">
-                <div class="mobile">
+                <div id="mobile">
                     <h4>Book a Table</h4>
                     <p>+1 5589 55488 55</p>
                 </div>
             </div>
             <div class="row2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <ul>
-                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                </ul>
-                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident</p>
                 <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/about-2.jpg" alt="abt2">
             </div>
         </div>
+    </div>
+
+    <div>
+        <div id="mycard">
+            <div id="redcard">
+                <h1 style="padding-right: 70px;">Why Choose Yummy?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur
+                    quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+                <div class="btndiv">
+                    <button class="learn">Learn More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="file.svg" alt="paper pad">
+                <h3>Corporis voluptates officia eiusmod</h3>
+                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+            </div>
+            <div class="card">
+                <img src="gem.svg" alt="gem">
+                <h3>Ullamco laboris ladore pan</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+            </div>
+            <div class="card">
+                <img src="inbox.svg" alt="inbox">
+                <h3>Labore consequatur incidid dolore</h3>
+                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg">
+        <div class="bgcard">
+            <h1>232</h1>
+            <p>Clients</p>
+        </div>
+        <div class="bgcard">
+            <h1>521</h1>
+            <p>Projects</p>
+        </div>
+        <div class="bgcard">
+            <h1>1453</h1>
+            <p>Hours Of Support</p>
+        </div>
+        <div class="bgcard">
+            <h1>32</h1>
+            <p>Workers</p>
+        </div>
+    </div>
+    <div class="about">
+        <h5 class="smallabt">OUR MENU</h5>
+        <h2 class="special2">CHECK OUR <span style="color:#ce1212">YUMMY MENU</span></h2>
     </div>
 </body>
 
