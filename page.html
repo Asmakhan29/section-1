@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Gabarito:regular,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
 
         * {
             font-family: Gabarito;
         }
         .container {
-            background-color:#008374;
+            background-color: #008374;
             /* margin: top/bottom  right/left */
-            padding: 10px 150px;
+            padding: 70px 150px;
         }
 
         .header-row {
@@ -22,8 +24,24 @@
             /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
         }
         .mybtn {
-            padding: 10px 20px;
-            border-radius: 25px;
+            padding: 15px 30px;
+            border-radius: 26px;
+            letter-spacing: 1px;
+            border: none;
+            background-color: none;
+            font-size: 17px;
+        }
+        .mainbtn {
+            background-color: #ffffff44;
+            color:#fff;
+            margin-right: 12px;
+            border: 1px solid #7cc1b7;
+            /* border-color: #d5e5e3; */
+        }
+        .mainbtn2 {
+            background-color: #008374;
+            color: #fff;
+            
         }
         .title {
             color:#fff;
@@ -46,7 +64,7 @@
                     <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, iure minus reiciendis quasi molestiae fugiat!</p>
                     <div>
                         <button class="mybtn mainbtn">Get Started</button>
-                        <button class="mybtn mainbtn2">Watch Video</button>
+                        <button class="mybtn mainbtn2"><i class="fa-regular fa-circle-play fa-beat" style="color: #ffffff; margin-right:5px;"></i>Watch Video</button>
                     </div>
                 </div>    
                 <div class="solimg">
