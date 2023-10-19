@@ -24,11 +24,29 @@
         .subhero{
             color: #858ea1;
         }
-
+        .mynav ul li a{
+            color:#5f687b;
+            font-weight: 600;
+            font-size: 17px;
+        }
+        .mynav ul li a:active{
+            color:#16df7e;
+        }
+        .mynav ul li a:hover {
+            color:#16df7e;
+        }
         .my-img {
             object-fit: contain;
         }
+        #getbtn {
+            /* color:#16df7e; */
+        }
+        #getbtn:hover {
+            border-color: #2924be;
+            color:#fff;
+            background-color: #2924be;
 
+        }
         #title {
             font-size: 45px;
             font-weight: bold;
@@ -74,13 +92,16 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-lg p-4 mx-5">
-            <div class="container-fluid">
-                <h1 class="navbar-brand mx-5">eNno</h1>
-                <div class="ps-5">
+        <nav class="navbar navbar-expand-lg p-4 mx-5 text-center">
+            <h1 class="navbar-brand mx-5 hero2 fw-bold fs-2">eNno</h1>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div class="container-fluid"> -->
+                <div class="collapse navbar-collapse mynav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
+                            <a href="#" class="nav-link active" style="color:#16df7e">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">About</a>
@@ -94,13 +115,25 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">Team</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Drop Down 1</a>
+                                <a href="#" class="dropdown-item">Drop Down 2</a>
+                                <a href="#" class="dropdown-item">Drop Down 3</a>
+                                <a href="#" class="dropdown-item">Drop Down 4</a>
+                                <a href="#" class="dropdown-item">Drop Down 5</a>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Contact</a>
                         </li>
                     </ul>
+                    
                 </div>
-                <button class="btn btn-outline-secondary btn-s rounded-1 p-1 px-4 f-secoondary">Get Started</button>
-            </div>
+                <button class="btn btn-outline-secondary rounded-1 p-1 px-4" id="getbtn">Get Started</button>
+                
+            <!-- </div> -->
         </nav>
     </header>
 
@@ -217,7 +250,7 @@
 
     <div class="container text-center my-5 py-5">
         <div>
-            <h1 class="fw-bold text-uppercase" style="font-size: 50px; color: #3e445018;">services</h1>
+            <h1 class="fw-bold text-uppercase" style="font-size: 50px; color: #3e44501d;">services</h1>
             <h2 class="text-uppercase hero2 fw-bold mb-4" style="margin-top:-42px;">services</h2>
             <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
         </div>
@@ -293,7 +326,7 @@
 
     <div class="container text-center my-5 py-5">
         <div>
-            <h1 class="fw-bold text-uppercase" style="font-size: 50px; color: #3e445018;">portfolio</h1>
+            <h1 class="fw-bold text-uppercase" style="font-size: 50px; color: #3e44501f;">portfolio</h1>
             <h2 class="text-uppercase hero2 fw-bold mb-4" style="margin-top:-42px;">portfolio</h2>
             <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
         </div>
